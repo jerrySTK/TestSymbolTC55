@@ -12,10 +12,10 @@ using Android.Widget;
 using SymbolT80ScannerTest.Services;
 using Xamarin.Forms;
 
-[assembly: Dependency(typeof(SymbolT80ScannerTest.Droid.Scanner))]
+[assembly: Dependency(typeof(SymbolT80ScannerTest.Droid.ScannerService))]
 namespace SymbolT80ScannerTest.Droid
 {
-    public class Scanner: IScanner
+    public class ScannerService: IScanner
     {
         private static String ACTION_SOFTSCANTRIGGER = "com.motorolasolutions.emdk.datawedge.api.ACTION_SOFTSCANTRIGGER";
         private static String EXTRA_PARAM = "com.motorolasolutions.emdk.datawedge.api.EXTRA_PARAMETER";
